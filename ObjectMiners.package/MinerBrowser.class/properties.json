@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "CollectorsBrowser",
+	"category" : "ObjectMiners",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"miner"
+	],
+	"name" : "MinerBrowser",
+	"type" : "normal"
+}

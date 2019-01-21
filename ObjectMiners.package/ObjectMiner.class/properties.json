@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ObjectMiners",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"collector",
+		"configuration",
+		"recordContext",
+		"recordIntermediateObjects",
+		"recordStrategy"
+	],
+	"name" : "ObjectMiner",
+	"type" : "normal"
+}
