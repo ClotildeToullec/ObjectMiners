@@ -1,4 +1,4 @@
-Interaction
+api-interaction
 getObject: index
 	"index: index of the object in the history of captured objects"
 

@@ -1,4 +1,4 @@
-Interaction
+api-interaction
 getHistory: size
 	"size: number of recorded objects to recover from the history of captured objects"
 

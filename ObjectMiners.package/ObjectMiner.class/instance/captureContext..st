@@ -1,4 +1,4 @@
-Object Capture
+api-capture
 captureContext: reificationsArray
 	"Specifies which entities to capture in the execution context of the reached object"
 

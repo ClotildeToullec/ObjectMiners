@@ -1,4 +1,4 @@
-Interaction
+api-interaction
 haltAfterCapture: size
 	"size: number of captured objects before breaking the execution"
 
