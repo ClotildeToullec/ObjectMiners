@@ -5,13 +5,13 @@ buildConditionsIn: tab
 		andShow: [ :a | 
 			a fastList
 				title: 'Conditions';
-				display: miner configuration conditions;
+				display: selectedMiner configuration conditions;
 				act: [ :presentation | 
 					| newCond name |
 					newCond := CollectEvaluation new.
 					name := self requestUniqueConditionName.
 					name
-						ifNotEmpty: [ miner configuration addCondition: (newCond name: name) ].
+						ifNotEmpty: [ selectedMiner configuration addCondition: (newCond name: name) ].
 					presentation update ]
 					icon: GLMUIThemeExtraIcons glamorousAdd
 					entitled: 'Add';
@@ -25,7 +25,7 @@ buildConditionsIn: tab
 					icon: GLMUIThemeExtraIcons glamorousEdit
 					entitled: 'Rename';
 				act: [ :presentation | 
-					miner configuration conditions
+					selectedMiner configuration conditions
 						remove: presentation selection
 						ifAbsent: [  ].
 					presentation update ]
@@ -38,7 +38,7 @@ buildConditionsIn: tab
 					presentation update ]
 					entitled: 'Rename';
 				selectionAct: [ :presentation | 
-					miner configuration removeCondition: presentation selection.
+					selectedMiner configuration removeCondition: presentation selection.
 					presentation update ]
 					entitled: 'Remove' ].
 	tab transmit
@@ -50,7 +50,7 @@ buildConditionsIn: tab
 			script
 				title: 'Edit condition';
 				smalltalkClass: [ Object ];
-				variableBindings: [ miner collector installer reifications
+				variableBindings: [ selectedMiner collector installer reifications
 						collect: [ :reif | reif -> reif ] ];
 				display: (cond source ifNil: [ '' ]);
 				selectionAct: [ :thePane | 
@@ -58,8 +58,8 @@ buildConditionsIn: tab
 					src := (thePane pane port: #text) value.
 					cond source: src.
 					thePane clearUserEdits.
-					miner configuration
-						compileConditionsWith: miner collector installer reifications.
+					selectedMiner configuration
+						compileConditionsWith: selectedMiner collector installer reifications.
 					a update ]
 					on: $s
 					entitled: 'Accept'.
@@ -69,6 +69,6 @@ buildConditionsIn: tab
 						resetBindings;
 						variableBindings: [ :bindings | 
 							bindings
-								addAll: [ miner collector installer reifications
+								addAll: [ selectedMiner collector installer reifications
 										collect: [ :reif | reif -> reif ] ] ].
 					script update ] ]

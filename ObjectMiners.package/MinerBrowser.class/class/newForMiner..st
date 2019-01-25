@@ -1,7 +1,7 @@
 world menu
 newForMiner: anObjectMiner
 	self basicNew
-		miner: anObjectMiner;
+		selectedMiner: anObjectMiner;
 		initialize;
 		title: 'Configuration';
 		openOn: #()

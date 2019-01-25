@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"miner"
+		"miners",
+		"selectedMiner"
 	],
 	"name" : "MinerBrowser",
 	"type" : "normal"

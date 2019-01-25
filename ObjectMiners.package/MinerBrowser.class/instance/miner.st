@@ -1,3 +1,0 @@
-accessing
-miner
-	^ miner

@@ -5,21 +5,21 @@ buildReificationsIn: tab
 		andShow: [ :a | 
 			a fastList
 				title: 'Context';
-				display: [ miner configuration reifications ];
+				display: [ selectedMiner configuration reifications ];
 				act: [ :presentation | 
 					| availableReifs |
 					availableReifs := allReifications asOrderedCollection.
-					availableReifs removeAllFoundIn: miner collector installer baseReifications.
+					availableReifs removeAllFoundIn: selectedMiner collector installer baseReifications.
 					((TickDialogWindow itemsList: availableReifs itemsHeaderName: 'Context' title: 'Select context entities') choose
-						ifNil: [ #() ]) do: [ :reif | miner configuration addReification: reif ].
-					miner install.
+						ifNil: [ #() ]) do: [ :reif | selectedMiner configuration addReification: reif ].
+					selectedMiner install.
 					presentation update.
 					collectorAnnouncer announce: SelectedReificationsHaveChanged ]
 					icon: GLMUIThemeExtraIcons glamorousAdd
 					entitled: 'Select context entities';
 				act: [ :presentation | 
-					miner configuration reifications remove: presentation selection ifAbsent: [  ].
-					miner install.
+					selectedMiner configuration reifications remove: presentation selection ifAbsent: [  ].
+					selectedMiner install.
 					presentation update.
 					collectorAnnouncer announce: SelectedReificationsHaveChanged ]
 					icon: GLMUIThemeExtraIcons glamorousTrash

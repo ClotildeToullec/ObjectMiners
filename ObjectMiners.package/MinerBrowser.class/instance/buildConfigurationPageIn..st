@@ -2,16 +2,35 @@ building - configuration
 buildConfigurationPageIn: aPresentation
 	| tab |
 	tab := aPresentation tabulator.
-	tab act: [ self update ] icon: GLMUIThemeExtraIcons glamorousRefresh entitled: 'Refresh'.
-	tab title: 'Configuration of : ' , miner collector printDefinition.
+	tab
+		act: [ self update ]
+		icon: GLMUIThemeExtraIcons glamorousRefresh
+		entitled: 'Refresh'.
+	tab
+		title: 'Configuration of : ' , selectedMiner collector printDefinition.
 	tab
 		with: [ :browser | 
 			browser
 				row: [ :r | 
 					r
+						column: #intermediateObjectsCapture;
+						column: [ :c | 
+							c
+								row: [ :ro | 
+									ro
+										column: #checkBox;
+										column: #droplist ] ] ]
+					size: 30;
+				row: [ :r | 
+					r
+						column: #recordStrategy;
+						column: #captureStack ]
+					span: 1;
+				row: [ :r | 
+					r
 						column: #collectorDefinition;
 						column: #reificationsList ]
-					span: 1;
+					span: 2;
 				row: [ :r | 
 					r
 						column: #conditions;
@@ -19,12 +38,13 @@ buildConfigurationPageIn: aPresentation
 					span: 1;
 				row: [ :r | 
 					r
-						column: #transformations;
-						column: #selectedTransformation ]
+						column: #actions;
+						column: #selectedAction ]
 					span: 1 ].
 	tab transmit
 		to: #collectorDefinition;
-		andShow: [ :a | miner collector buildInComposite: a ].
+		andShow: [ :a | selectedMiner collector buildInComposite: a ].
+	self buildMinerConfigurationsIn: tab.
 	self buildReificationsIn: tab.
 	self buildConditionsIn: tab.
-	self buildTransformationsIn: tab
+	self buildActionsIn: tab
