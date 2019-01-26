@@ -1,4 +1,4 @@
-building - visualization
+visualization pane
 buildMetadataInspectorIn: a for: item
 	| metadata |
 	metadata := self metadataDictionaryFor: item.

@@ -1,29 +1,29 @@
 configuration pane - miner
-buildHaltAfterCaptureIn: tab
+buildHistorySizeIn: tab
 	tab transmit
-		to: #haltAfterCapture;
-		andShow: [ :a | 
+		to: #historySize;
+				andShow: [ :a | 
 			| browser |
 			browser := a tabulator
-				title: 'Halt After Capture';
+				title: 'History Size';
 				with: [ :layout | 
 					layout
-						column: #checkBoxHAC;
-						column: #dropListHAC ].
+						column: #checkBoxHS;
+						column: #dropListHS ].
 			browser transmit
-				to: #checkBoxHAC;
+				to: #checkBoxHS;
 				andShow: [ :b | 
 					b morph
 						morph: [ :morphPresentation | 
 							| checkBox |
 							checkBox := CheckboxMorph
 								on: minerConfiguration
-								selected: #haltAfterCapture
-								changeSelected: #haltAfterCapture:.
-							checkBox label: 'Halt after:'.
+								selected: #historyLoop
+								changeSelected: #historyLoop:.
+							checkBox label: 'Loop History'.
 							checkBox ] ].
 			browser transmit
-				to: #dropListHAC;
+				to: #dropListHS;
 				andShow: [ :b | 
 					b morph
 						morph: [ :morphPresentation | 
@@ -31,6 +31,6 @@ buildHaltAfterCaptureIn: tab
 							dropList := DropListMorph
 								on: minerConfiguration
 								list: (1 to: 20)
-								selected: #haltAfterSize
-								changeSelected: #haltAfterSize:.
-							dropList ] ] ]
+								selected: #historySize
+								changeSelected: #historySize:.
+							dropList ] ] ].

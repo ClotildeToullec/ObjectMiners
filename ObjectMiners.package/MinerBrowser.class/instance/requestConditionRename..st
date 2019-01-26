@@ -1,4 +1,4 @@
-building - configuration
+configuration pane - conditions
 requestConditionRename: aPreviousName
 	| name conditionsNames |
 	name := UIManager default

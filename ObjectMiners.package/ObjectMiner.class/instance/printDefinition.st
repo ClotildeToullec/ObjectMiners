@@ -1,3 +1,3 @@
-private
+printing
 printDefinition
 	^ collector printDefinition

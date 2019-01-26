@@ -1,13 +1,18 @@
 {
 	"commentStamp" : "",
-	"super" : "CollectorsBrowser",
+	"super" : "GLMCompositePresentation",
 	"category" : "ObjectMiners",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"miners",
-		"selectedMiner"
+		"selectedMiner",
+		"stackedItemSegment",
+		"itemSegment",
+		"allReifications",
+		"collectorAnnouncer",
+		"minerConfiguration"
 	],
 	"name" : "MinerBrowser",
 	"type" : "normal"

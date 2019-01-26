@@ -1,4 +1,4 @@
-building - configuration
+configuration pane - conditions
 requestUniqueConditionName
 	| name conditionsNames |
 	name := UIManager default request: 'Condition name'.

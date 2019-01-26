@@ -1,4 +1,4 @@
-building - visualization
+visualization pane
 buildOmniscientItemInspectorIn: tab
 	tab transmit
 		from: #subexpressions;

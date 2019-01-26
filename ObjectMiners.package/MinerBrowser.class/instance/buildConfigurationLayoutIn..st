@@ -1,5 +1,5 @@
-building - configuration
-buildConfigurationPageIn: aPresentation
+configuration pane
+buildConfigurationLayoutIn: aPresentation
 	| tab |
 	tab := aPresentation tabulator.
 	tab
@@ -14,18 +14,15 @@ buildConfigurationPageIn: aPresentation
 				row: [ :r | 
 					r
 						column: #intermediateObjectsCapture;
-						column: [ :c | 
-							c
-								row: [ :ro | 
-									ro
-										column: #checkBox;
-										column: #droplist ] ] ]
+						column: #installButton ]
 					size: 30;
 				row: [ :r | 
 					r
 						column: #recordStrategy;
-						column: #captureStack ]
-					span: 1;
+						column: #captureStack;
+						column: #historySize;
+						column: #haltAfterCapture]
+					size: 65;
 				row: [ :r | 
 					r
 						column: #collectorDefinition;
@@ -41,10 +38,4 @@ buildConfigurationPageIn: aPresentation
 						column: #actions;
 						column: #selectedAction ]
 					span: 1 ].
-	tab transmit
-		to: #collectorDefinition;
-		andShow: [ :a | selectedMiner collector buildInComposite: a ].
-	self buildMinerConfigurationsIn: tab.
-	self buildReificationsIn: tab.
-	self buildConditionsIn: tab.
-	self buildActionsIn: tab
+	self buildConfigurationPresentationsIn: tab

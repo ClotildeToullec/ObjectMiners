@@ -1,9 +1,15 @@
-building - configuration - miner
+configuration pane - miner
 buildRecordStrategyIn: tab
 	tab transmit
 		to: #recordStrategy;
 		andShow: [ :a | 
-			a dropDownList
-				title: 'Record Strategy';
-				display: {'Weak Reference' . 'Strong Reference' . 'Deep Copy'};
-				selectedIndex: 1 ]
+			a morph
+				morph: [ :morphPresentation | 
+					| dropList |
+					dropList := DropListMorph
+						on: minerConfiguration
+						list: #recordStrategyList
+						selected: #recordStrategyIndex
+						changeSelected: #recordStrategyFromIndex:.
+					dropList ];
+				title: 'Record Strategy' ]

@@ -1,6 +1,9 @@
-building - configuration - miner
+configuration pane - miner
 buildMinerConfigurationsIn: tab
-	self buildIntermediateObjectsCaptureIn: tab.
-	self buildRecordStrategyIn: tab.
-	self buildCaptureStackIn: tab.
-	self buildHaltAfterCaptureIn: tab
+	self
+		buildIntermediateObjectsCaptureIn: tab;
+		buildRecordStrategyIn: tab;
+		buildCaptureStackIn: tab;
+		buildHaltAfterCaptureIn: tab;
+		buildInstallButtonIn: tab;
+		buildHistorySizeIn: tab

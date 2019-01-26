@@ -1,4 +1,4 @@
-building - configuration - miner
+configuration pane - miner
 buildIntermediateObjectsCaptureIn: tab
 	tab transmit
 		to: #intermediateObjectsCapture;
@@ -7,7 +7,7 @@ buildIntermediateObjectsCaptureIn: tab
 				morph: [ :morphPresentation | 
 					| checkBox |
 					checkBox := CheckboxMorph
-						on: selectedMiner
+						on: minerConfiguration
 						selected: #recordIntermediateObjects
 						changeSelected: #recordIntermediateObjects:.
 					checkBox label: 'Record Intermediate Objects'.

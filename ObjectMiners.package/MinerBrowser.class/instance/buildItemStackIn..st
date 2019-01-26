@@ -1,14 +1,14 @@
-building - visualization
+visualization pane
 buildItemStackIn: tab
 	tab transmit
-		from: #collectionTime;
+		from: #captureTime;
 		to: #subexpressions;
 		andShow: [ :a :item | 
 			| itemList |
 			itemList := item backInTimeItems copy.
 			itemList add: item.
 			item
-				ifNotNil: [ a title: 'Collected sub-expressions'.
+				ifNotNil: [ a title: 'Captured sub-expressions'.
 					a fastList
 						tagsStyle: #greenRoundedButton;
 						display: itemList;

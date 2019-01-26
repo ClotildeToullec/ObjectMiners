@@ -1,4 +1,4 @@
-building - visualization
+visualization pane - segments
 highlightItemSegmentIn: tab
 	tab transmit
 		from: #subexpressions;

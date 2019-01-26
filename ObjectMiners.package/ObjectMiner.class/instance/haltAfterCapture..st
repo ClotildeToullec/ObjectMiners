@@ -1,7 +1,6 @@
 api-interaction
 haltAfterCapture: size
-	"size: number of captured objects before breaking the execution"
+	haltAfterCapture := size
+	"size: number of captured objects before breaking the execution. 0 means no halt after capture."
 
 	"collector installer installBreakpoint ?"
-
-	

@@ -1,4 +1,4 @@
-building - visualization
+visualization pane
 buildSourceIn: tab
 	tab transmit
 		from: #itemNodes;

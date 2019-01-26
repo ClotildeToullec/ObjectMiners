@@ -1,4 +1,4 @@
-building - configuration
+configuration pane - actions
 requestUniqueActionName
 	| name actionNames |
 	name := UIManager default request: 'Action name'.

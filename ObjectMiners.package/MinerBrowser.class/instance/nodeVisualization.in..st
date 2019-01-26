@@ -1,4 +1,4 @@
-building - visualization
+visualization pane
 nodeVisualization: node in: a
 	| pharoMethod |
 	a title: (node methodNode methodClass name , ' >>') asString.

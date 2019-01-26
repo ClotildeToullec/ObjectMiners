@@ -1,5 +1,5 @@
-building - configuration
-buildReificationsIn: tab
+configuration pane
+buildContextListIn: tab
 	tab transmit
 		to: #reificationsList;
 		andShow: [ :a | 

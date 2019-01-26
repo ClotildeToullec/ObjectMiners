@@ -1,9 +1,15 @@
-building - configuration - miner
+configuration pane - miner
 buildCaptureStackIn: tab
 	tab transmit
 		to: #captureStack;
 		andShow: [ :a | 
-			a dropDownList
-				title: 'Capture stack' ;
-				display: (1 to: 20);
-				selectedIndex: 10 ]
+			a morph
+				morph: [ :morphPresentation | 
+					| dropList |
+					dropList := DropListMorph
+						on: minerConfiguration
+						list: (1 to: 20)
+						selected: #stackSize
+						changeSelected: #stackSize:.
+					dropList ];
+				title: 'Capture stack' ]

@@ -1,13 +1,13 @@
-building - visualization
+visualization pane
 buildNodesVsualizationIn: tab
 	tab transmit
 		to: #itemNodes;
 		andShow: [ :a | 
-			a title: 'CollectPoints'.
+			a title: 'Capture points'.
 			a fastList display: selectedMiner collector collectPoints ].
 	tab transmit
 		from: #itemNodes;
-		to: #collectionTime;
+		to: #captureTime;
 		andShow: [ :a :collectPoint | 
 			| itemsByTime |
 			itemsByTime := (selectedMiner collector omniscientCollectedItems select: [ :item | item node == collectPoint ])

@@ -1,4 +1,4 @@
-building - configuration
+configuration pane - actions
 requestActionRename: aPreviousName
 	| name transfoNames |
 	name := UIManager default

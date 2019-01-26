@@ -1,4 +1,4 @@
-building - visualization
+visualization pane
 metadataDictionaryFor: item
 	| metadata |
 	metadata := Dictionary new.

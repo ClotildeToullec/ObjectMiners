@@ -1,8 +1,8 @@
-building - visualization
-buildCollectPointsVisualizationIn: aPresentation
+visualization pane
+buildCaptureVisualizationIn: aPresentation
 	| tab |
 	tab := aPresentation tabulator.
-	tab title: 'Collect points of : ' , selectedMiner printDefinition.
+	tab title: 'Capture points of : ' , selectedMiner printDefinition.
 	tab act: [ self update ] icon: GLMUIThemeExtraIcons glamorousRefresh entitled: 'Refresh'.
 	tab
 		with: [ :browser | 
@@ -10,7 +10,7 @@ buildCollectPointsVisualizationIn: aPresentation
 				row: [ :r | 
 					r
 						column: #itemNodes span: 2;
-						column: #collectionTime span: 1;
+						column: #captureTime span: 1;
 						column: #subexpressions span: 2;
 						column: #itemSource span: 3 ]
 				span: 4.

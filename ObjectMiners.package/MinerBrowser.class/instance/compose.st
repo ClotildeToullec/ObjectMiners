@@ -8,5 +8,5 @@ compose
 	pager
 		show: [ :a :col | 
 			self selectedMiner: col.
-			"self buildCollectPointsVisualizationIn: a."
-			self buildConfigurationPageIn: a ]
+			self buildCaptureVisualizationIn: a.
+			self buildConfigurationLayoutIn: a ]
