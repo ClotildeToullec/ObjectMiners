@@ -20,7 +20,7 @@ buildConfigurationLayoutIn: aPresentation
 					r
 						column: #recordStrategy;
 						column: #captureStack;
-						column: #historySize;
+						column: #history;
 						column: #haltAfterCapture]
 					size: 65;
 				row: [ :r | 

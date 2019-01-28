@@ -1,11 +1,11 @@
 configuration pane - miner
-buildCaptureStackIn: tab
+buildHistoryIn: tab
 	tab transmit
-		to: #captureStack;
+		to: #history;
 		andShow: [ :a | 
 			| browser |
 			browser := a tabulator
-				title: 'Stack';
+				title: 'History';
 				with: [ :layout | 
 					layout
 						column: #checkBox;
@@ -18,10 +18,10 @@ buildCaptureStackIn: tab
 							| checkBox |
 							checkBox := CheckboxMorph
 								on: minerConfiguration
-								selected: #captureStack
-								changeSelected: #captureStack:.
-							checkBox label: 'Capture'.
+								selected: #wrapHistory
+								changeSelected: #wrapHistory:.
+							checkBox label: 'Wrap History'.
 							checkBox ] ].
 			browser transmit
 				to: #field;
-				andShow: [ :b | b text display: [ minerConfiguration stackSize ] ] ]
+				andShow: [ :b | b text display: [ minerConfiguration historySize ] ] ]

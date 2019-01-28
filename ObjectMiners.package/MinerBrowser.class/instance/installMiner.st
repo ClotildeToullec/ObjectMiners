@@ -4,9 +4,9 @@ installMiner
 
 	selectedMiner
 		captureHistoryOfSize: minerConfiguration historySize
-			loop: minerConfiguration historyLoop;
+			loop: minerConfiguration wrapHistory;
 		captureStack: minerConfiguration stackSize;
 		recordIntermediateObjects: minerConfiguration recordIntermediateObjects;
-		recordStrategy: minerConfiguration recordStrategy withContext: true;
+		recordStrategy: minerConfiguration recordStrategy asCamelCase uncapitalized asSymbol withContext: true;
 		haltAfterCapture: minerConfiguration haltAfterSize;
 		install; inspect

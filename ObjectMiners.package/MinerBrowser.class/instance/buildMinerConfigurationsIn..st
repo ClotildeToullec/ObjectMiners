@@ -6,4 +6,4 @@ buildMinerConfigurationsIn: tab
 		buildCaptureStackIn: tab;
 		buildHaltAfterCaptureIn: tab;
 		buildInstallButtonIn: tab;
-		buildHistorySizeIn: tab
+		buildHistoryIn: tab

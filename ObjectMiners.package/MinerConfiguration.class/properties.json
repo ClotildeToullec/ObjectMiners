@@ -7,13 +7,14 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"historySize",
-		"historyLoop",
 		"haltAfterCapture",
 		"haltAfterSize",
 		"stackSize",
 		"recordStrategy",
 		"recordIntermediateObjects",
-		"recordStrategyList"
+		"recordStrategyList",
+		"wrapHistory",
+		"captureStack"
 	],
 	"name" : "MinerConfiguration",
 	"type" : "normal"
