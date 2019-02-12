@@ -1,26 +1,23 @@
-configuration pane
+configuration pane - configuration
 buildContextListIn: tab
 	tab transmit
 		to: #reificationsList;
-		andShow: [ :a | 
-			a fastList
-				title: 'Context';
-				display: [ selectedMiner configuration reifications ];
-				act: [ :presentation | 
-					| availableReifs |
-					availableReifs := allReifications asOrderedCollection.
-					availableReifs removeAllFoundIn: selectedMiner collector installer baseReifications.
-					((TickDialogWindow itemsList: availableReifs itemsHeaderName: 'Context' title: 'Select context entities') choose
-						ifNil: [ #() ]) do: [ :reif | selectedMiner configuration addReification: reif ].
-					selectedMiner install.
-					presentation update.
-					collectorAnnouncer announce: SelectedReificationsHaveChanged ]
-					icon: GLMUIThemeExtraIcons glamorousAdd
-					entitled: 'Select context entities';
-				act: [ :presentation | 
-					selectedMiner configuration reifications remove: presentation selection ifAbsent: [  ].
-					selectedMiner install.
-					presentation update.
-					collectorAnnouncer announce: SelectedReificationsHaveChanged ]
-					icon: GLMUIThemeExtraIcons glamorousTrash
-					entitled: 'Remove' ]
+		andShow: [ :b | 
+			b tabulator
+				title: 'Capture Context';
+				with: [ :layout | 
+					allReifications do: [ :reif | layout row: reif asSymbol ].
+					allReifications
+						do: [ :reif | 
+							layout transmit
+								to: reif asSymbol;
+								andShow: [ :a | 
+									a morph
+										morph: [ :morphPresentation | 
+											| checkBox |
+											checkBox := CheckboxMorph
+												on: minerConfiguration
+												selected: #recordIntermediateObjects
+												changeSelected: #recordIntermediateObjects:.
+											checkBox label: reif asString.
+											checkBox ] ] ] ] ]

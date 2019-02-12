@@ -1,5 +1,5 @@
 configuration pane
 buildMinerCapturePointIn: tab
 	tab transmit
-		to: #collectorDefinition;
+		to: #reaching;
 		andShow: [ :a | selectedMiner collector buildInComposite: a ]

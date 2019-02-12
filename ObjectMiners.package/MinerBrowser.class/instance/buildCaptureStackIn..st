@@ -1,4 +1,4 @@
-configuration pane - miner
+configuration pane - configuration
 buildCaptureStackIn: tab
 	tab transmit
 		to: #captureStack;
@@ -6,7 +6,7 @@ buildCaptureStackIn: tab
 			| browser |
 			browser := a tabulator
 				title: 'Stack';
-				with: [ :layout | 
+				with: [ :layout |
 					layout
 						column: #checkBox;
 						column: #field ].

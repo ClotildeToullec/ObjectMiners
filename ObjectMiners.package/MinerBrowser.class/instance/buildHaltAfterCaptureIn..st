@@ -1,4 +1,4 @@
-configuration pane - miner
+configuration pane - interaction
 buildHaltAfterCaptureIn: tab
 	tab transmit
 		to: #haltAfterCapture;

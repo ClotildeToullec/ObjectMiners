@@ -1,7 +1,7 @@
 configuration pane - conditions
 buildConditionsListIn: tab
 	tab transmit
-		to: #conditions;
+		to: #condition;
 		andShow: [ :a | 
 			a fastList
 				title: 'Conditions';

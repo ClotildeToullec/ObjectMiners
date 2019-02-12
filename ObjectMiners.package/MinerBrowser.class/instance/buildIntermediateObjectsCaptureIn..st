@@ -1,4 +1,4 @@
-configuration pane - miner
+configuration pane - configuration
 buildIntermediateObjectsCaptureIn: tab
 	tab transmit
 		to: #intermediateObjectsCapture;

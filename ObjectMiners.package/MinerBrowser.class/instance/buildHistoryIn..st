@@ -1,7 +1,7 @@
-configuration pane - miner
+configuration pane - configuration
 buildHistoryIn: tab
 	tab transmit
-		to: #history;
+		to: #wrapHistory;
 		andShow: [ :a | 
 			| browser |
 			browser := a tabulator

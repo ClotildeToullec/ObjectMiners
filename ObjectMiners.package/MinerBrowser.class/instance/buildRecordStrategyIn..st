@@ -1,4 +1,4 @@
-configuration pane - miner
+configuration pane - configuration
 buildRecordStrategyIn: tab
 	tab transmit
 		to: #recordStrategy;
