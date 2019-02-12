@@ -6,18 +6,26 @@ buildContextListIn: tab
 			b tabulator
 				title: 'Capture Context';
 				with: [ :layout | 
-					allReifications do: [ :reif | layout row: reif asSymbol ].
-					allReifications
+					layout
+						column:
+								[ :c | 1 to: self availableReifications size / 2 do: [ :i | c row: (self availableReifications at: i) ] ];
+						column: [ :c | 
+							self availableReifications size / 2 + 1 to: self availableReifications size
+							do: [ :i | c row: (self availableReifications at: i) ] ].
+					self availableReifications
 						do: [ :reif | 
 							layout transmit
 								to: reif asSymbol;
 								andShow: [ :a | 
 									a morph
 										morph: [ :morphPresentation | 
-											| checkBox |
+											| checkBox setter getter|
+											setter := 'record', reif asString capitalized.
+											getter := setter, ':'.
 											checkBox := CheckboxMorph
-												on: minerConfiguration
-												selected: #recordIntermediateObjects
-												changeSelected: #recordIntermediateObjects:.
+												on: minerConfiguration 
+												selected: setter asSymbol
+												changeSelected: getter asSymbol.
 											checkBox label: reif asString.
-											checkBox ] ] ] ] ]
+											checkBox ] ] ] ] ].
+	self flag: 'Announce change in context'

@@ -5,5 +5,5 @@ buildMinerConfigurationsIn: tab
 		buildIntermediateObjectsCaptureIn: tab;
 		buildCaptureStackIn: tab;
 		buildHistoryIn: tab;
-		buildContextListIn: tab";
-		buildConditionsListIn: tab"
+		buildContextListIn: tab;
+		buildConditionIn: tab

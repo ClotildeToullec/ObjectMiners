@@ -14,7 +14,10 @@
 		"recordIntermediateObjects",
 		"recordStrategyList",
 		"wrapHistory",
-		"captureStack"
+		"captureStack",
+		"condition",
+		"action",
+		"context"
 	],
 	"name" : "MinerConfiguration",
 	"type" : "normal"

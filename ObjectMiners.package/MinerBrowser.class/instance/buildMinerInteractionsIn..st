@@ -1,5 +1,5 @@
 configuration pane - interaction
 buildMinerInteractionsIn: tab
 	self
-		buildHaltAfterCaptureIn: tab";
-		buildActionsLisIn: tab"
+		buildHaltAfterCaptureIn: tab;
+		buildActionIn: tab

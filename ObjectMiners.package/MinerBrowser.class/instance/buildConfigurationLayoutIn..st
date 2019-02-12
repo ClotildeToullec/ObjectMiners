@@ -14,7 +14,7 @@ buildConfigurationLayoutIn: aPresentation
 				column: #minerConfiguration;
 				column: [ :c | 
 					c
-						row: #reaching span: 5;
+						row: #reaching span: 4;
 						row: #minerInteractions span: 3;
-						row: #installButton size: 30 ] ].
+						row: #installButton span: 1 ] ].
 	self buildConfigurationPresentationsIn: tab

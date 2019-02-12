@@ -10,5 +10,5 @@ buildMinerInteractionsLayoutIn: tab
 				with: [ :browser | 
 					browser
 						row: #haltAfterCapture size: 70;
-						row: #actions ].
+						row: #action ].
 			self buildMinerInteractionsIn: subTab ]

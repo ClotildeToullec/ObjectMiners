@@ -11,8 +11,8 @@ buildMinerConfigurationsLayoutIn: tab
 					browser
 						row: #intermediateObjectsCapture size: 30;
 						row: #recordStrategy size: 65;
-						row: #reificationsList span: 5;
+						row: #reificationsList size: 150;
 						row: #captureStack size: 70;
 						row: #wrapHistory size: 70;
-						row: #condition span: 1 ].
+						row: #condition ].
 			self buildMinerConfigurationsIn: subTab ]
