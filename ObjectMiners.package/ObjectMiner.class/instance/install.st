@@ -1,6 +1,5 @@
 installation
 install
-	collector configuration: configuration. "Does a collector need to know the configuration ?"
-	recordContext
+	recordIntermediateObjects
 		ifTrue: [ collector reinstall ]
-		ifFalse: [ collector reinstallWeakWith: configuration ]
+		ifFalse: [ collector reinstallWeakWith: collector configuration ].

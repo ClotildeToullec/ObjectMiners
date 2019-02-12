@@ -6,5 +6,5 @@ reachTempVar: varName inMethod: methodName fromClass: className withOption: anOp
 		collectTempVarNamed: varName
 		inMethodNamed: methodName
 		inClass: className.
-	option := anOption
+	option := anOption.
 	"Options : read , write or all (String)"

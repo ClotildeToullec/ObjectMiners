@@ -30,7 +30,7 @@ buildHaltAfterCaptureIn: tab
 							| dropList |
 							dropList := DropListMorph
 								on: minerConfiguration
-								list: (1 to: 20)
+								list: (1 to: 100)
 								selected: #haltAfterSize
 								changeSelected: #haltAfterSize:.
 							dropList ] ] ]

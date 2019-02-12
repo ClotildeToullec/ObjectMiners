@@ -10,12 +10,11 @@
 		"configuration",
 		"recordContext",
 		"recordIntermediateObjects",
-		"recordStrategy",
 		"option",
 		"historySize",
 		"historyLoop",
 		"stackSize",
-		"haltAfterCapture"
+		"haltAfterSize"
 	],
 	"name" : "ObjectMiner",
 	"type" : "normal"

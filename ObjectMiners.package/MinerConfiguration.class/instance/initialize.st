@@ -3,7 +3,7 @@ initialize
 	wrapHistory := false.
 	historySize := 1000.
 	haltAfterCapture := false.
-	haltAfterSize := 1.
+	haltAfterSize := 0.
 	captureStack := true.
 	stackSize := 20.
 	recordStrategy := 'Weak Reference'.
