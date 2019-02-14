@@ -13,9 +13,10 @@ buildActionIn: tab
 				selectionAct: [ :thePane | 
 					| src |
 					src := (thePane pane port: #text) value.
-					minerConfiguration action source: src.
+					src
+						ifNotEmpty: [ minerConfiguration action source: src.
+							minerConfiguration compileAction ].
 					thePane clearUserEdits.
-					minerConfiguration compileAction.
 					a update ]
 					on: $s
 					entitled: 'Accept' ].

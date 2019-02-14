@@ -1,22 +1,22 @@
 installing
 installMiner
-	"Missing : replayRecord:"
-	minerConfiguration
-		compileAction;
-		compileCondition.
+	minerConfiguration compileAction.
+	minerConfiguration compileCondition.
 	selectedMiner
-	"Configuration"
-		recordIntermediateObjects: minerConfiguration recordIntermediateObjects;
+		recordIntermediateObjects: minerConfiguration recordIntermediateObjects.
+	selectedMiner
 		recordStrategy: minerConfiguration recordStrategy asCamelCase uncapitalized asSymbol
-			withContext: true; "captureContext isNotNil ?"
-		captureContext: minerConfiguration context;
-		captureStack: minerConfiguration stackSize;
+		withContext: true.
+	selectedMiner captureContext: minerConfiguration context.
+	selectedMiner captureStack: minerConfiguration stackSize.
+	selectedMiner
 		captureHistoryOfSize: minerConfiguration historySize
-			loop: minerConfiguration wrapHistory;
-		setCondition: minerConfiguration condition;
-		"Interaction"
-		haltAfterCapture: minerConfiguration haltAfterCapture size: minerConfiguration haltAfterSize ;
-		setAction: minerConfiguration action;
-		"Install"
-		install;
-		inspect
+		loop: minerConfiguration wrapHistory.
+	minerConfiguration condition source
+		ifNotEmpty: [ selectedMiner setCondition: minerConfiguration condition ].
+	selectedMiner
+		haltAfterCapture: minerConfiguration haltAfterCapture
+		size: minerConfiguration haltAfterSize.
+	minerConfiguration action source
+		ifNotEmpty: [ selectedMiner setAction: minerConfiguration action ].
+	selectedMiner install
