@@ -15,8 +15,7 @@
 		"option",
 		"historySize",
 		"historyLoop",
-		"stackSize",
-		"haltAfterSize"
+		"stackSize"
 	],
 	"name" : "ObjectMiner",
 	"type" : "normal"
