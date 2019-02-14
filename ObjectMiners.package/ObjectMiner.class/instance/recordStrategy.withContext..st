@@ -4,9 +4,9 @@ recordStrategy: strategy withContext: aBoolean
 recordContext: boolean, specifies if captured context elements should be recorded as well"
 
 	strategy = #weakReference
-		ifTrue: [ collector behavior useWeakRefStorage ].
+		ifTrue: [ collector installer behavior useWeakRefStorage ].
 	strategy = #strongReference
-		ifTrue: [ collector behavior useStrongRefStorage ].
-	strategy = #weakReference
-		ifTrue: [ collector behavior useDeepCopyStorage ].
+		ifTrue: [ collector installer behavior useStrongRefStorage ].
+	strategy = #deepCopy
+		ifTrue: [ collector installer behavior useDeepCopyStorage ].
 	recordContext := aBoolean

@@ -6,7 +6,7 @@ initialize
 	haltAfterSize := 0.
 	captureStack := true.
 	stackSize := 20.
-	recordStrategy := 'Weak Reference'.
+	recordStrategy := 'Strong Reference'.
 	recordStrategyList := {'Weak Reference' . 'Strong Reference'.
 	'Deep Copy'} asOrderedCollection.
 	recordIntermediateObjects := false.
