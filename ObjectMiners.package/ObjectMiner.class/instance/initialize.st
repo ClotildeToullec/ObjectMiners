@@ -6,4 +6,5 @@ initialize
 	historyLoop := true.
 	stackSize := 10.
 	recordContext := true.
-	recordIntermediateObjects := false
+	recordIntermediateObjects := false.
+	self registry add: self
