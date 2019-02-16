@@ -7,25 +7,47 @@ buildContextListIn: tab
 				title: 'Capture Context';
 				with: [ :layout | 
 					layout
-						column:
-								[ :c | 1 to: self availableReifications size / 2 do: [ :i | c row: (self availableReifications at: i) ] ];
 						column: [ :c | 
-							self availableReifications size / 2 + 1 to: self availableReifications size
-							do: [ :i | c row: (self availableReifications at: i) ] ].
+							c
+								row: (self availableReifications at: 1);
+								row: (self availableReifications at: 2) ];
+						column: [ :c | 
+							c
+								row: (self availableReifications at: 3);
+								row: (self availableReifications at: 4) ];
+						column: [ :c | 
+							c
+								row: (self availableReifications at: 5);
+								row: (self availableReifications at: 6) ].
+					self availableReifications size % 2 == 0
+						ifFalse: [ layout
+								column: [ :c | 
+									c
+										row: (self availableReifications at: 7);
+										row: #empty ] ].
 					self availableReifications
 						do: [ :reif | 
 							layout transmit
-								to: reif asSymbol;
+								to: reif;
 								andShow: [ :a | 
 									a morph
 										morph: [ :morphPresentation | 
-											| checkBox setter getter|
-											setter := 'record', reif asString capitalized.
-											getter := setter, ':'.
+											| checkBox setter getter |
+											setter := String
+												streamContents: [ :s | 
+													s
+														nextPutAll: 'record';
+														nextPutAll: reif asString capitalized ].
+											getter := String
+												streamContents: [ :s | 
+													s
+														nextPutAll: setter;
+														nextPutAll: ':' ].
 											checkBox := CheckboxMorph
-												on: minerConfiguration 
+												on: minerConfiguration
 												selected: setter asSymbol
 												changeSelected: getter asSymbol.
 											checkBox label: reif asString.
 											checkBox ] ] ] ] ].
-	self flag: 'Announce change in context'
+	self flag: 'Announce change in context'.
+	self flag: 'Todo : Better management for availableReification size'
