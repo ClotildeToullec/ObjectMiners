@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ObjectMiners",
+	"classinstvars" : [
+		"minersMenuIcon"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ObjectMinersIcons",
+	"type" : "normal"
+}

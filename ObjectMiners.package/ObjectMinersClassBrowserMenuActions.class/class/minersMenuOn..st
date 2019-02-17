@@ -8,5 +8,7 @@ minersMenuOn: aBuilder
 		target: [  ];
 		keyText: 't ';
 		order: 0;
-		iconName: #history;
-		with: [ self buildMinersMenuOn: aBuilder ]
+		"iconName: #history;"
+		icon: ObjectMinersIcons minersMenuIcon;
+		with: [ self buildMinersMenuOn: aBuilder ].
+		
