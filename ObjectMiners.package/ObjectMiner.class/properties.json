@@ -15,7 +15,8 @@
 		"option",
 		"historySize",
 		"historyLoop",
-		"stackSize"
+		"stackSize",
+		"availableReifications"
 	],
 	"name" : "ObjectMiner",
 	"type" : "normal"

@@ -6,4 +6,5 @@ reachInstVar: varName fromClass: className withOption: anOption
 		collectInstVarNamed: varName
 		inClass: className.
 	option := anOption.
+	availableReifications addAll: {#name . #oldValue . #newValue}
 	"Options : 'read' , 'write' or 'all'"

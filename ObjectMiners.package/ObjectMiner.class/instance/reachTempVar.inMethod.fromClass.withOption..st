@@ -7,4 +7,5 @@ reachTempVar: varName inMethod: methodName fromClass: className withOption: anOp
 		inMethodNamed: methodName
 		inClass: className.
 	option := anOption.
+	availableReifications addAll: {#name . #oldValue . #newValue}
 	"Options : read , write or all (String)"

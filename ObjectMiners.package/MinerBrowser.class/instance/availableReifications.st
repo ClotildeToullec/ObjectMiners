@@ -1,3 +1,3 @@
 accessing
 availableReifications
-	^ selectedMiner collector installer availableReifications
+	^ selectedMiner availableReifications
