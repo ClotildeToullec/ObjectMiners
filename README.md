@@ -13,9 +13,9 @@ Metacello new
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* [StevenCostiou](https://github.com/StevenCostiou) - *Initial work* - [ClotildeToullec](https://github.com/ClotildeToullec)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
 
 ## License
 
