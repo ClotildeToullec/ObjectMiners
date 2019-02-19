@@ -22,6 +22,6 @@ Design and implementation:
 
 * Alain Plantec
 * Mickaël Kerboeuf
-* [Stéphane Ducasse] (https://github.com/Ducasse)
+* [Stéphane Ducasse](https://github.com/Ducasse)
 
 Icons and logos by Yann Plunian.
