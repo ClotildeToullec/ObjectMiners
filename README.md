@@ -1,7 +1,5 @@
-# ObjectMiners
-
 <p align="center">
-  <img src='https://raw.githubusercontent.com/ClotildeToullec/ObjectMiners/master/icons/ObjectMiners_Steven_03b.png'>
+  <img src='https://raw.githubusercontent.com/ClotildeToullec/ObjectMiners/master/icons/ObjectMiners_Steven_03b_small.png'>
 </p>
 
 Evaluate this code in a Playground to load the Object Miners model and debugger.
