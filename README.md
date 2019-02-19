@@ -11,7 +11,7 @@ Metacello new
     load.
 ```
 <br><br>
-
+---
 ## Authors
 
 Design and implementation: 
