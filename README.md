@@ -10,7 +10,18 @@ Metacello new
     repository: 'github://ClotildeToullec/ObjectMiners';
     load.
 ```
+<br><br>
 
->Design and implementation: [StevenCostiou](https://github.com/StevenCostiou), [ClotildeToullec](https://github.com/ClotildeToullec)
+## Authors
+
+Design and implementation: 
+* [StevenCostiou](https://github.com/StevenCostiou)
+* [ClotildeToullec](https://github.com/ClotildeToullec)
+
+## Acknowledgments
+
+* Alain Plantec
+* Mickaël Kerboeuf
+* Stéphane Ducasse
 
 Icons and logos by Yann Plunian.
