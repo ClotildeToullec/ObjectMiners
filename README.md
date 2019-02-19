@@ -1,7 +1,7 @@
 
  <img align="left" width=256 height= 256 src='https://raw.githubusercontent.com/ClotildeToullec/ObjectMiners/master/icons/ObjectMiners_Steven_03w.png'>
 
-
+## Installation - Pharo 7
 Evaluate this code in a Playground to load the Object Miners model and debugger:
 
 ```Smalltalk
@@ -13,16 +13,5 @@ Metacello new
 
 ## Authors
 
-* [StevenCostiou](https://github.com/StevenCostiou) - *Initial work* - [ClotildeToullec](https://github.com/ClotildeToullec)
-
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+[StevenCostiou](https://github.com/StevenCostiou), [ClotildeToullec](https://github.com/ClotildeToullec)
+Icons and logos by Yann Plunian.
