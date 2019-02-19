@@ -1,5 +1,5 @@
 # ObjectMiners
-![Object Miners](./icons/ObjectMiners_Steven_01b.png)
+![Object Miners](./icons/ObjectMiners_Steven_03b.png)
 
 Evaluate this code in a Playground to load the Object Miners model and debugger.
 
