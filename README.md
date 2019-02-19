@@ -15,13 +15,13 @@ Metacello new
 ## Authors
 
 Design and implementation: 
-* [StevenCostiou](https://github.com/StevenCostiou)
-* [ClotildeToullec](https://github.com/ClotildeToullec)
+* [Steven Costiou](https://github.com/StevenCostiou)
+* [Clotilde Toullec](https://github.com/ClotildeToullec)
 
 ## Acknowledgments
 
 * Alain Plantec
 * Mickaël Kerboeuf
-* Stéphane Ducasse
+* [Stéphane Ducasse] (https://github.com/Ducass
 
 Icons and logos by Yann Plunian.
