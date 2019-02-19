@@ -11,11 +11,6 @@ Metacello new
     load.
 ```
 
-
-## Authors
-
-Design and implementation
-* [StevenCostiou](https://github.com/StevenCostiou)
-* [ClotildeToullec](https://github.com/ClotildeToullec)
+>Design and implementation: [StevenCostiou](https://github.com/StevenCostiou), [ClotildeToullec](https://github.com/ClotildeToullec)
 
 Icons and logos by Yann Plunian.
