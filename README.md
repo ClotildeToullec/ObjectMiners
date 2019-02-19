@@ -20,7 +20,7 @@ Design and implementation:
 
 ## Acknowledgments
 
-* Alain Plantec
+* [Alain Plantec](https://github.com/plantec)
 * Mickaël Kerboeuf
 * [Stéphane Ducasse](https://github.com/Ducasse)
 
