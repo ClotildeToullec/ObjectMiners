@@ -48,6 +48,6 @@ buildContextListIn: tab
 												selected: setter asSymbol
 												changeSelected: getter asSymbol.
 											checkBox label: reif asString.
-											checkBox ] ] ] ] ].
-	self flag: 'Announce change in context'.
-	self flag: 'Todo : Better management for availableReification size'
+											checkBox ];
+										morphicSelectionAct: [ :i | self inspect ] entitled: '' ] ] ].
+			self flag: 'Todo : Better management for availableReification size' ]

@@ -11,5 +11,5 @@ compose
 			minerConfiguration := selectedMiner configuration.
 			minerConfiguration browser: self.
 			self resetBindings.
-			self buildConfigurationLayoutIn: a.
-			"self buildCaptureVisualizationIn: a "]
+			self buildConfigurationLayoutIn: a
+			"self buildCaptureVisualizationIn: a " ]

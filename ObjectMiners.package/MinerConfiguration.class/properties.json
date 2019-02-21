@@ -17,7 +17,8 @@
 		"captureStack",
 		"condition",
 		"action",
-		"context"
+		"context",
+		"browser"
 	],
 	"name" : "MinerConfiguration",
 	"type" : "normal"

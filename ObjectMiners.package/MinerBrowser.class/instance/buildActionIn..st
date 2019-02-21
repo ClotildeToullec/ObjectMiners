@@ -13,11 +13,17 @@ buildActionIn: tab
 				selectionAct: [ :thePane | 
 					| src |
 					src := (thePane pane port: #text) value.
-					src
-						ifNotEmpty: [ minerConfiguration action source: src.
-							minerConfiguration compileAction ].
+					minerConfiguration action source: src.
+					minerConfiguration compileAction.
 					thePane clearUserEdits.
 					a update ]
 					on: $s
-					entitled: 'Accept' ].
-	self flag: 'Refresh bindings on a change in context'
+					entitled: 'Accept'.
+			"Update on change in context selection - Does not work"
+			announcer
+				when: BindingsUpdate
+				do: [ script
+						resetBindings;
+						variableBindings: bindings;
+						updateVariableBindings.
+					script update ] ]

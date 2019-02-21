@@ -1,3 +1,6 @@
 api-interaction
 setAction: action
-	collector configuration transformations: (OrderedCollection newFrom: {action})
+	| collectorActions |
+	collectorActions := OrderedCollection new.
+	action source ifNotEmpty: [ collectorActions add: action ].
+	collector configuration transformations: collectorActions

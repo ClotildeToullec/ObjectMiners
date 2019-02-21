@@ -1,3 +1,3 @@
 evaluations
 compileAction
-	action compileWith: context
+	action source ifNotNil: [ action compileWith: context ]

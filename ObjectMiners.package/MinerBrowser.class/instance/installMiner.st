@@ -12,11 +12,9 @@ installMiner
 	selectedMiner
 		captureHistoryOfSize: minerConfiguration historySize
 		loop: minerConfiguration wrapHistory.
-	minerConfiguration condition source
-		ifNotEmpty: [ selectedMiner setCondition: minerConfiguration condition ].
+	selectedMiner setCondition: minerConfiguration condition.
 	selectedMiner
 		haltAfterCapture: minerConfiguration haltAfterCapture
 		size: minerConfiguration haltAfterSize.
-	minerConfiguration action source
-		ifNotEmpty: [ selectedMiner setAction: minerConfiguration action ].
+	selectedMiner setAction: minerConfiguration action.
 	selectedMiner install

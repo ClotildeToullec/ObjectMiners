@@ -1,3 +1,3 @@
 evaluations
 compileCondition
-	condition compileWith: context
+	condition source ifNotNil: [ condition compileWith: context ].

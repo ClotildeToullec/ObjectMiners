@@ -8,16 +8,22 @@ buildConditionIn: tab
 			script
 				title: 'Condition';
 				smalltalkClass: [ Object ];
-				variableBindings: [ minerConfiguration context collect: [ :reif | reif -> reif ] ];
+				variableBindings: bindings;
 				display: (minerConfiguration condition source ifNil: [ '' ]);
 				selectionAct: [ :thePane | 
 					| src |
 					src := (thePane pane port: #text) value.
-					src
-						ifNotEmpty: [ minerConfiguration condition source: src.
-							minerConfiguration compileCondition ].
+					minerConfiguration condition source: src.
+					minerConfiguration compileCondition.
 					thePane clearUserEdits.
 					a update ]
 					on: $s
-					entitled: 'Accept' ].
-	self flag: 'Refresh bindings on a change in context'
+					entitled: 'Accept'.
+			"Update on change in context selection - Does not work"
+			announcer
+				when: BindingsUpdate
+				do: [ script
+						resetBindings;
+						variableBindings: bindings;
+						updateVariableBindings.
+					script update ] ]

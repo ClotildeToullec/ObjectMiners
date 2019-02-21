@@ -8,13 +8,13 @@ buildNodesVsualizationIn: tab
 	tab transmit
 		from: #itemNodes;
 		to: #captureTime;
-		andShow: [ :a :collectPoint | selectedMiner collector inspect.
-"			| itemsByTime |
+		andShow: [ :a :collectPoint |
+			| itemsByTime |
 			itemsByTime := (selectedMiner collector omniscientCollectedItems select: [ :item | item node == collectPoint ])
-				sorted: [ :item1 :item2 | item1 timestamp < item2 timestamp ].
+				"sorted: [ :item1 :item2 | item1 timestamp < item2 timestamp ]".
 			a title: 'Time'.
 			a fastList
 				display: itemsByTime;
 				format: [ :item | item timestamp print24 ].
-			a shouldValidate: true" ].
+			a shouldValidate: true ].
 	self buildSourceIn: tab
