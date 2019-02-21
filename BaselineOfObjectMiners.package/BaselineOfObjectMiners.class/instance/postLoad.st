@@ -1,0 +1,3 @@
+baselines
+postLoad
+	ObjectMinersIcons loadIconsFromGithub
