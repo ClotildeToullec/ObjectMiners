@@ -9,5 +9,7 @@ compose
 		show: [ :a :col | 
 			self selectedMiner: col.
 			minerConfiguration := selectedMiner configuration.
+			minerConfiguration browser: self.
+			self resetBindings.
 			self buildConfigurationLayoutIn: a.
-			self buildCaptureVisualizationIn: a ]
+			"self buildCaptureVisualizationIn: a "]

@@ -10,8 +10,9 @@
 		"selectedMiner",
 		"stackedItemSegment",
 		"itemSegment",
-		"collectorAnnouncer",
-		"minerConfiguration"
+		"minerConfiguration",
+		"bindings",
+		"announcer"
 	],
 	"name" : "MinerBrowser",
 	"type" : "normal"

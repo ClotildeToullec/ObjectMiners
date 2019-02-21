@@ -9,7 +9,8 @@ buildHaltAfterCaptureIn: tab
 				with: [ :layout | 
 					layout
 						column: #checkBoxHAC;
-						column: #dropListHAC ].
+						column: #dropListHAC span: 2;
+						column: #labelHAC ].
 			browser transmit
 				to: #checkBoxHAC;
 				andShow: [ :b | 
@@ -20,17 +21,30 @@ buildHaltAfterCaptureIn: tab
 								on: minerConfiguration
 								selected: #haltAfterCapture
 								changeSelected: #haltAfterCapture:.
-							checkBox label: 'Halt after:'.
+							checkBox label: 'Halt after '.
 							checkBox ] ].
 			browser transmit
 				to: #dropListHAC;
 				andShow: [ :b | 
-					b morph
-						morph: [ :morphPresentation | 
-							| dropList |
-							dropList := DropListMorph
-								on: minerConfiguration
-								list: (1 to: 100)
-								selected: #haltAfterSize
-								changeSelected: #haltAfterSize:.
-							dropList ] ] ]
+					b dropDownList
+						display: [ 0 to: 100 ];
+						selectedIndex: 1 ].
+			browser transmit
+				to: #labelHAC;
+				from: #dropListHAC;
+				andShow: [ :b | 
+					| text label |
+					text := TextMorph new.
+					label := b morph morph: text.
+					label
+						display: [ :num | 
+							text
+								contents:
+									(num < 2
+										ifTrue: [ 'capture' ]
+										ifFalse: [ 'captures' ]).
+							text
+								font: StandardFonts defaultFont;
+								margins: 7;
+								wrapFlag: true ].
+					label ] ]
