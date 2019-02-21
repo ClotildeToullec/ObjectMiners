@@ -1,9 +1,11 @@
 configuration pane - interaction
 buildHaltAfterCaptureIn: tab
+	"This method uses morphic and glamour updates in a non aesthetic way. Still, it's working"
+
 	tab transmit
 		to: #haltAfterCapture;
 		andShow: [ :a | 
-			| browser |
+			| browser checkBox |
 			browser := a tabulator
 				title: 'Halt After Capture';
 				with: [ :layout | 
@@ -16,7 +18,6 @@ buildHaltAfterCaptureIn: tab
 				andShow: [ :b | 
 					b morph
 						morph: [ :morphPresentation | 
-							| checkBox |
 							checkBox := CheckboxMorph
 								on: minerConfiguration
 								selected: #haltAfterCapture
@@ -28,7 +29,16 @@ buildHaltAfterCaptureIn: tab
 				andShow: [ :b | 
 					b dropDownList
 						display: [ 0 to: 100 ];
-						selectedIndex: 1 ].
+						onChangeOfPort: #selection
+							act: [ :list | 
+							minerConfiguration haltAfterSize: list selection.
+							minerConfiguration
+								haltAfterCapture:
+									(list selection = 0
+										ifTrue: [ false ]
+										ifFalse: [ true ]).
+							checkBox updateSelection ];
+						selectedIndex: minerConfiguration haltAfterSize + 1 ].	"There must be a better way"
 			browser transmit
 				to: #labelHAC;
 				from: #dropListHAC;
@@ -44,7 +54,6 @@ buildHaltAfterCaptureIn: tab
 										ifTrue: [ 'capture' ]
 										ifFalse: [ 'captures' ]).
 							text
-								font: StandardFonts defaultFont;
 								margins: 7;
 								wrapFlag: true ].
 					label ] ]
