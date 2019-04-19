@@ -7,12 +7,17 @@ buildMinersListIn: aPresentation
 			self update ]
 		icon: GLMUIThemeExtraIcons glamorousRefresh
 		entitled: 'Refresh'.
-	list updateOn: ObjectCollectorHasChanged from: [ CollectorAnnouncer default weak ].
-	list selectionAct: [ :presentation | presentation selection inspect ] entitled: 'Inspect'.
+	list
+		updateOn: ObjectCollectorHasChanged
+		from: [ CollectorAnnouncer default weak ].
+	list
+		selectionAct: [ :presentation | presentation selection inspect ]
+		entitled: 'Inspect'.
 	list
 		selectionAct: [ :presentation | 
 			presentation selection uninstall.
-			self updateMinersList ]
+			self updateMinersList.
+			self update ]
 		entitled: 'Uninstall'.
 	list display: miners.
 	list format: [ :objminer | objminer printDefinition ].
