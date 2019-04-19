@@ -32,11 +32,7 @@ buildHaltAfterCaptureIn: tab
 						onChangeOfPort: #selection
 							act: [ :list | 
 							minerConfiguration haltAfterSize: list selection.
-							minerConfiguration
-								haltAfterCapture:
-									(list selection = 0
-										ifTrue: [ false ]
-										ifFalse: [ true ]).
+							minerConfiguration haltAfterCapture: list selection > 0.
 							checkBox updateSelection ];
 						selectedIndex: minerConfiguration haltAfterSize + 1 ].	"There must be a better way"
 			browser transmit
