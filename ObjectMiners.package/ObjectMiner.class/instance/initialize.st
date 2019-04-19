@@ -4,7 +4,7 @@ initialize
 	configuration := MinerConfiguration new.
 	historySize := 1.
 	historyLoop := true.
-	stackSize := 10.
+	stackSize := 20.
 	recordContext := true.
 	recordIntermediateObjects := false.
 	availableReifications := OrderedCollection
