@@ -92,10 +92,10 @@ sender | The sender of the message creating the captured object.
 
   Object capture API | Parameters
   -- | --
-   **setCondition**(sourceCode)<br>	Condition upon which capture will happen. Elements from the execution context (*e.g.* object to capture) are accessible in the condition. | **sourceCode:** user defined condition `String`.
-    **captureHistory**(size, loop)}<br>Configures the history of capture objects for a given miner.  | **size:** sets history size (`1` by default).<br>**loop:** `true` or `false`, specifies if the history wraps.
-    **captureStack**(size)<br> Specifies the captured stack size. | **size:** the size of the stack (`Integer`) to store for each capture, `20` method calls by default, `0` means no stack.
-  **recordStrategy**(strategy, recordContext)<br>	Configures the record strategy to use when a capture is performed. This interface is only implemented in the debugger as an additional tool. | **strategy:** record strategy (`String`) to use when capturing an object.<br>**recordContext:** `true` or `false`, specifies if captured context elements should be recorded as well.
+  **setCondition**(sourceCode)<br> Condition upon which capture will happen. Elements from the execution context (*e.g.* object to capture) are accessible in the condition. | **sourceCode:** user defined condition `String`.
+  **captureHistory**(size, loop)}<br>Configures the history of capture objects for a given miner.  | **size:** sets history size (`1` by default).<br>**loop:** `true` or `false`, specifies if the history wraps.
+  **captureStack**(size)<br> Specifies the captured stack size. | **size:** the size of the stack (`Integer`) to store for each capture, `20` method calls by default, `0` means no stack.
+  **recordStrategy**(strategy, recordContext)<br> Configures the record strategy to use when a capture is performed. This interface is only implemented in the debugger as an additional tool. | **strategy:** record strategy (`String`) to use when capturing an object.<br>**recordContext:** `true` or `false`, specifies if captured context elements should be recorded as well.
 
 ### Object recording strategies
 
@@ -114,14 +114,14 @@ Captured objects and reifications from their execution context, *i.e.*, *records
   **Interaction API** | **Parameters**
   -- | --
   **setAction**(sourceCode)<br>	User-defined action to be executed just after the capture. Captured elements (*e.g.* captured objects) are accessible in the action. | **sourceCode:** user defined action `String`
-  **haltAfterCapture**(size)<br>	Breaks the execution after a given number of captures (opens a debugger).| **size:** number of captured objects (`Integer`) before breaking the execution.
+  **haltAfterCapture**(size)<br> Breaks the execution after a given number of captures (opens a debugger).| **size:** number of captured objects (`Integer`) before breaking the execution.
 
 
 ### Object Miners post-capture interaction API
-  **Interaction API** | P**arameters**
+  **Interaction API** | **Parameters**
   -- | --
-	**getObject**(index)<br>Returns an object from the capture history. | **index:** index of the object (`Integer`) in the history of captured objects.
-	**getHistoryEntry**(index)<br>Returns an entry from the capture history. | **index:** index of the entry (`Integer`) to recover from the history of captured objects.
-  **getHistory**(size)<br> Returns entries from the capture history. | **size:** number of entries (`Integer`) to recover from the history of captured objects.
-  **replayObject**(entry, node)<br> Configures a specific object from an entry in the capture history to be replayed.That object must have been captured for the given node in a previous execution. | **entry:** entry from the history in which to find the replay object for next executions.<br> **node:** the AST node for which the captured object (found in the entry) will be set as replay
+**getObject**(index)<br>Returns an object from the capture history. | **index:** index of the object (`Integer`) in the history of captured objects.
+**getHistoryEntry**(index)<br>Returns an entry from the capture history. | **index:** index of the entry (`Integer`) to recover from the history of captured objects.
+**getHistory**(size)<br> Returns entries from the capture history. | **size:** number of entries (`Integer`) to recover from the history of captured objects.
+**replayObject**(entry, node)<br> Configures a specific object from an entry in the capture history to be replayed. That object must have been captured for the given node in a previous execution. | **entry:** entry from the history in which to find the replay object for next executions.<br>**node:** the AST node for which the captured object (found in the entry) will be set as replay
 
