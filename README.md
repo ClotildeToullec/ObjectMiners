@@ -37,7 +37,7 @@ We used this API as a guide for our Pharo implementation (https://github.com/Clo
 This interface provide means to reach objects of interest in the control flow of a program.
 Basically it defines where the object miner receiving the message will install itself.
 
-### Object Miners API for reaching objects read or written to instance and temporary variables
+### Object Miners API for reaching objects read or written to instance and temporary variables
 
 
   Variable API | Parameters
@@ -54,7 +54,7 @@ The following APIs show interfaces to define which objects to capture, to define
 
 
 
-### Object Miners capture API: defining what objects to capture
+### Object Miners capture API: defining what objects to capture
 
   Object capture API | Parameters
   -- | --
@@ -62,7 +62,7 @@ The following APIs show interfaces to define which objects to capture, to define
   **recordIntermediateObjects**(boolean) <br> (De)activates the recording of objects produced by sub-computations of an instrumented expression.  | **boolean:** `true` or `false` (`false` as default), specifies if intermediate objects returned by the execution of sub-expressions of an instrumented expression must also be recorded
 
 ### Available contextual entities at capture time
-#### All objects
+#### All objects
 object |The object in which the miner is installed.
   -- | --
 class |The class of the object in which the miner is installed.
