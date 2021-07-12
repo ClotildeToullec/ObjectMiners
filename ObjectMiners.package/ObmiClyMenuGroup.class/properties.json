@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "StevenCostiou 7/12/2021 10:25",
+	"super" : "CmdMenuGroup",
+	"category" : "ObjectMiners",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ObmiClyMenuGroup",
+	"type" : "normal"
+}

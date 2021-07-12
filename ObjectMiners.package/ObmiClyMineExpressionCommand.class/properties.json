@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ObmiClyMenuCommand",
+	"category" : "ObjectMiners",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ObmiClyMineExpressionCommand",
+	"type" : "normal"
+}

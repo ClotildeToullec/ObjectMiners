@@ -1,0 +1,4 @@
+accessing
+defaultMenuIcon
+
+	^ ObjectMinersIcons minersMenuIcon

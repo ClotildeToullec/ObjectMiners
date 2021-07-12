@@ -1,7 +1,7 @@
 main menu
 minersMenuOn: aBuilder
-	<RubSmalltalkCodeMenu>
-	<contextMenu>
+"	<RubSmalltalkCodeMenu>
+	<contextMenu>"
 	aBuilder
 		item: 'Object Miners';
 		selector: #value;

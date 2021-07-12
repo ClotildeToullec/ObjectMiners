@@ -1,0 +1,4 @@
+accessing
+execute
+	
+	self halt

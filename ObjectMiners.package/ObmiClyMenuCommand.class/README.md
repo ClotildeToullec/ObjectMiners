@@ -1,0 +1,1 @@
+I am a base class for commands which installs different kind of Object Miners on the AST of methods.

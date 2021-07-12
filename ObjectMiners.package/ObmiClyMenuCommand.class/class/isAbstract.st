@@ -1,0 +1,3 @@
+activation
+isAbstract
+	^self = ObmiClyMenuCommand 

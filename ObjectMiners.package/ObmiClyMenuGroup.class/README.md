@@ -1,0 +1,1 @@
+I am a menu to mine objects from source code with object miners
