@@ -1,0 +1,1 @@
+I open a miner configuration browser from an instance variable node to mine objects returned by a selected instance variable expression.

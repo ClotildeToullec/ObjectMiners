@@ -1,0 +1,1 @@
+I open a miner configuration browser for instance variables selected in the _Vars_ pane of Calypso.

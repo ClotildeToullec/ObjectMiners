@@ -1,0 +1,2 @@
+I open a miner configuration browser from an ast variable node to mine objects returned by a selected variable expression.
+I am an abstract class, my subclass implement concrete mining actions for variable.

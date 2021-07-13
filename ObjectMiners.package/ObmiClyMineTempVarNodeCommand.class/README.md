@@ -1,0 +1,1 @@
+I open a miner configuration browser from a temporary or argument variable node to mine objects returned by a selected temporary or argument variable expression.

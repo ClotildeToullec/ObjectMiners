@@ -1,0 +1,1 @@
+I open a miner configuration browser from an ast node to mine objects returned by a selected expression, or from a selected method in the Calypso brower.
