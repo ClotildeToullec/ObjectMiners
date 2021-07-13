@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "StevenCostiou 7/13/2021 21:35",
 	"super" : "ObmiClyMenuCommand",
-	"category" : "ObjectMiners",
+	"category" : "ObjectMiners-Commands",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

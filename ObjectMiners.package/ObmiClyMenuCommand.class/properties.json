@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "StevenCostiou 7/12/2021 10:31",
 	"super" : "SycSourceCodeCommand",
-	"category" : "ObjectMiners",
+	"category" : "ObjectMiners-Commands",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
