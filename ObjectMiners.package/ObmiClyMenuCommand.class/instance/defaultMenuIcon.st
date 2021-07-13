@@ -1,4 +1,4 @@
 accessing
 defaultMenuIcon
 
-	^ ObjectMinersIcons minersMenuIcon
+	^ ObmiIcons minersMenuIcon

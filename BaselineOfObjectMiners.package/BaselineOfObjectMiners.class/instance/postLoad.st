@@ -1,3 +1,3 @@
 baselines
 postLoad
-	ObjectMinersIcons loadIconsFromGithub
+	ObmiIcons loadIconsFromGithub

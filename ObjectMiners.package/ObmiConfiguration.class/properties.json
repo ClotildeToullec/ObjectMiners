@@ -20,6 +20,6 @@
 		"context",
 		"browser"
 	],
-	"name" : "MinerConfiguration",
+	"name" : "ObmiConfiguration",
 	"type" : "normal"
 }

@@ -1,7 +1,7 @@
 initialization
 initialize
 	super initialize.
-	configuration := MinerConfiguration new.
+	configuration := ObmiConfiguration new.
 	historySize := 1.
 	historyLoop := true.
 	stackSize := 20.

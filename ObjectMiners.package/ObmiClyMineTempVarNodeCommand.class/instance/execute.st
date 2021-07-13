@@ -1,4 +1,4 @@
 execution
 execute
 
-	(ObjectMiner new reachTempVarNode: sourceNode) browseMiner
+	(ObmiObjectMiner new reachTempVarNode: sourceNode) browseMiner

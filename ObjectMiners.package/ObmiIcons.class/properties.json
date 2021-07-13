@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "StevenCostiou 7/13/2021 21:37",
 	"super" : "Object",
 	"category" : "ObjectMiners",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"minersMenuIcon"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ObjectMinersIcons",
+	"name" : "ObmiIcons",
 	"type" : "normal"
 }

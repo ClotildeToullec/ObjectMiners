@@ -1,27 +1,27 @@
-configuration pane - interaction
-buildActionIn: tab
+configuration pane - configuration
+buildConditionIn: tab
 	tab transmit
-		to: #action;
-		andShow: [ :a | 
+		to: #condition;
+		andShow: [ :a :cond | 
 			| script |
 			script := a pharoScript.
 			script
-				title: 'Action';
+				title: 'Condition';
 				smalltalkClass: [ Object ];
-				variableBindings: [ minerConfiguration context collect: [ :reif | reif -> reif ] ];
-				display: (minerConfiguration action source ifNil: [ '' ]);
+				variableBindings: bindings;
+				display: (minerConfiguration condition source ifNil: [ '' ]);
 				selectionAct: [ :thePane | 
 					| src |
 					src := (thePane pane port: #text) value.
-					minerConfiguration action source: src.
-					minerConfiguration compileAction.
+					minerConfiguration condition source: src.
+					minerConfiguration compileCondition.
 					thePane clearUserEdits.
 					a update ]
 					on: $s
 					entitled: 'Accept'.
 			"Update on change in context selection - Does not work"
 			announcer
-				when: BindingsUpdate
+				when: ObmiBindingsUpdate
 				do: [ script
 						resetBindings;
 						variableBindings: bindings;

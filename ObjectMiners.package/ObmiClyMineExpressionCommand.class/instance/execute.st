@@ -1,3 +1,3 @@
 execution
 execute
-	(ObjectMiner new reachNode: sourceNode) browseMiner
+	(ObmiObjectMiner new reachNode: sourceNode) browseMiner

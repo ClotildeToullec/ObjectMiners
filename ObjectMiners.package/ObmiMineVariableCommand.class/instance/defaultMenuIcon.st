@@ -1,4 +1,4 @@
 execution
 defaultMenuIcon
 
-	^ ObjectMinersIcons minersMenuIcon
+	^ ObmiIcons minersMenuIcon

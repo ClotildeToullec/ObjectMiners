@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BindingsUpdate",
+	"name" : "ObmiBindingsUpdate",
 	"type" : "normal"
 }
