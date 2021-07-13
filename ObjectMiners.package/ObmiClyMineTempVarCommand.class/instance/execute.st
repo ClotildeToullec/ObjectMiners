@@ -1,4 +1,4 @@
 execution
 execute
-	
-	self halt
+
+	(ObjectMiner new reachTempVarNode: sourceNode) browseMiner

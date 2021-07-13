@@ -1,4 +1,4 @@
 accessing
 execute
 	
-	self halt
+	(ObjectMiner new reachInstVarNode: sourceNode) browseMiner
