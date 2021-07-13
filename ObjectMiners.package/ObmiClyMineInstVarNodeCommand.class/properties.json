@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ObmiClyMenuCommand",
+	"super" : "ObmiClyMineVariableNodeCommand",
 	"category" : "ObjectMiners",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ObmiClyMineVariableCommand",
+	"name" : "ObmiClyMineInstVarNodeCommand",
 	"type" : "normal"
 }

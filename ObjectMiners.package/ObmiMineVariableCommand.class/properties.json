@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ObmiClyMineVariableCommand",
+	"super" : "SycVariableCommand",
 	"category" : "ObjectMiners",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ObmiClyMineInstVarCommand",
+	"name" : "ObmiMineVariableCommand",
 	"type" : "normal"
 }

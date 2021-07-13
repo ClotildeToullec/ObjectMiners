@@ -1,0 +1,3 @@
+testing
+defaultMenuItemName
+	^'Miner test'
