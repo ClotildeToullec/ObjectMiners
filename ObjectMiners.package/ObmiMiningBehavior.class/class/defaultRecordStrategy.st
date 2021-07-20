@@ -1,0 +1,4 @@
+storage - strategies
+defaultRecordStrategy
+
+	^ OmniscientItem

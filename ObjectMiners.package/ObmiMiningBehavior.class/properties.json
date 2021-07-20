@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "StevenCostiou 7/15/2021 10:38",
+	"super" : "Object",
+	"category" : "ObjectMiners-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"captureCount",
+		"recordStrategy"
+	],
+	"name" : "ObmiMiningBehavior",
+	"type" : "normal"
+}

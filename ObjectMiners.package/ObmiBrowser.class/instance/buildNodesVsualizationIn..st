@@ -10,7 +10,7 @@ buildNodesVsualizationIn: tab
 		to: #captureTime;
 		andShow: [ :a :collectPoint |
 			| itemsByTime |
-			itemsByTime := (selectedMiner collector omniscientCollectedItems select: [ :item | item node == collectPoint ])
+			itemsByTime := (selectedMiner collector records select: [ :item | item node == collectPoint ])
 				"sorted: [ :item1 :item2 | item1 timestamp < item2 timestamp ]".
 			a title: 'Time'.
 			a fastList

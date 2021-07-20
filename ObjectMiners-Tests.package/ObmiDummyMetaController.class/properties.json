@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "StevenCostiou 7/15/2021 12:23",
+	"super" : "Object",
+	"category" : "ObjectMiners-Tests-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stackSize"
+	],
+	"name" : "ObmiDummyMetaController",
+	"type" : "normal"
+}

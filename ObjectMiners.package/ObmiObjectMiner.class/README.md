@@ -1,0 +1,1 @@
+**Object Miners** are instrumentation of program expressions that capture objects and their execution  context  (_i.e._,  the  call  stack)  from those expressions and their sub-expressions.

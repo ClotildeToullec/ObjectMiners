@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "StevenCostiou 7/15/2021 10:39",
+	"super" : "ObmiMiningBehavior",
+	"category" : "ObjectMiners-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"replayValue"
+	],
+	"name" : "ObmiReplayBehavior",
+	"type" : "normal"
+}

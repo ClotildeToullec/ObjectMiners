@@ -1,0 +1,1 @@
+I am a specialized mining behavior that replays a user-defined object at a mining point instead of mining objects from this mining point.

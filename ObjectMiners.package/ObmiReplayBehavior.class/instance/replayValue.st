@@ -1,0 +1,3 @@
+accessing
+replayValue
+	^ replayValue

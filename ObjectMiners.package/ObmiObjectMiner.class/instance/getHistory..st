@@ -4,5 +4,5 @@ getHistory: size
 
 	| history |
 	history := OrderedCollection new.
-	1 to: size do: [ :i | history add: (collector omniscientCollectedItems at: i) ].
+	1 to: size do: [ :i | history add: (collector records at: i) ].
 	^ history

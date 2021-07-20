@@ -8,7 +8,7 @@ buildActionIn: tab
 			script
 				title: 'Action';
 				smalltalkClass: [ Object ];
-				variableBindings: [ minerConfiguration context collect: [ :reif | reif -> reif ] ];
+				variableBindings: [ minerConfiguration context mine: [ :reif | reif -> reif ] ];
 				display: (minerConfiguration action source ifNil: [ '' ]);
 				selectionAct: [ :thePane | 
 					| src |

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "ObjectMiners-Tests-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"miningBehavior",
+		"collector",
+		"rawData",
+		"reifications"
+	],
+	"name" : "ObmiMiningBehaviorTest",
+	"type" : "normal"
+}
