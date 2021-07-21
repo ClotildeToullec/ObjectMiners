@@ -1,3 +1,3 @@
-storage - strategies
+record - strategies
 recordDeepCopies
 	recordStrategy := self class deepCopyRecordStrategy 
